@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf7">
+  <meta property="og:title" content="For Lavssu 🫶">
+  <meta property="og:description" content="A little something from me to you.">
+  <title>For Lavssu 🫶</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fffaf7;
+      color: #292524;
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 32px;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 650px;
+      animation: appear 1.2s ease both;
+    }
+
+    .heart {
+      font-size: 42px;
+      margin-bottom: 26px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .main-message {
+      font-size: clamp(30px, 7vw, 50px);
+      line-height: 1.25;
+      letter-spacing: -1px;
+      font-weight: 500;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 28px;
+      font-size: 13px;
+      opacity: 0.45;
+      letter-spacing: 0.5px;
+    }
+
+    .story {
+      width: 100%;
+      max-width: 680px;
+      padding: 85px 28px 110px;
+    }
+
+    .line {
+      margin: 0 auto 38px;
+      font-size: clamp(18px, 4vw, 23px);
+      line-height: 1.7;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: appear 0.9s ease forwards;
+    }
+
+    .line:nth-child(2) { animation-delay: .12s; }
+    .line:nth-child(3) { animation-delay: .24s; }
+    .line:nth-child(4) { animation-delay: .36s; }
+    .line:nth-child(5) { animation-delay: .48s; }
+    .line:nth-child(6) { animation-delay: .60s; }
+
+    .soft {
+      opacity: 0.8;
+    }
+
+    .final {
+      text-align: center;
+      margin-top: 65px;
+      font-size: clamp(19px, 4vw, 23px);
+      line-height: 1.7;
+      animation: appear 1s ease 0.75s both;
+    }
+
+    .cheers {
+      margin-top: 42px;
+      text-align: center;
+      font-size: 19px;
+      letter-spacing: 1px;
+      animation: appear 1s ease 0.95s both;
+    }
+
+    .cheers-emoji {
+      display: block;
+      font-size: 28px;
+      margin-top: 12px;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="heart">🫶</div>
+        <div class="main-message">Lavssu, you matter to me</div>
+      </div>
+
+      <div class="scroll-hint">there's a little more ↓</div>
+    </section>
+
+    <section class="story">
+
+      <p class="line">
+        Some friendships don't need grand moments to feel special. 🌻
+        They just quietly become a part of your everyday life.
+        Of course, we do have our special moments too... ✨
+        but still, it's the little things that make a bond feel like ours.
+      </p>
+
+      <p class="line">
+        The plans that somehow take forever to make and never materialize.
+        And somehow, we still end up making them.
+      </p>
+
+      <p class="line">
+        The random calls. The teasing.
+        Checking each other's where-are-yous & what-abouts.
+        I like that we can be completely stupid with each other,
+        annoy each other, disappear into our own lives,
+        and then just pick up the conversation as if nothing happened. 🫶
+      </p>
+
+      <p class="line">
+        Somewhere along the way, we became part of each other's lives. 🌿
+        And honestly, I think that's a pretty special thing.
+      </p>
+
+      <p class="line">
+        And yes, this is me being unusually sincere.
+        Please don't get used to it. 😌😂
+      </p>
+
+      <p class="line soft">
+        Of course, there are hurting points from both sides. 🤍
+        Hope we find a solution.
+      </p>
+
+      <div class="final">
+        But whatever happens, I hope you always know<br>
+        that I am your well-wisher, no matter how we are with each other
+        or how far away from each other. 🌷
+      </div>
+
+      <div class="cheers">
+        Cheers 🥂
+        <span class="cheers-emoji">🫶✨</span>
+      </div>
+
+    </section>
+
+  </div>
+</body>
+</html>
